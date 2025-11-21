@@ -1,0 +1,68 @@
+name: Collect Tailscale Logs
+
+on:
+  schedule:
+    # Run every hour at minute 0
+    - cron: '0 * * * *'
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  collect-logs:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install Tailscale
+        uses: tailscale/github-action@v2
+        with:
+          oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
+          oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
+          tags: tag:ci
+      
+      - name: Wait for Tailscale to connect
+        run: |
+          echo "Waiting for Tailscale to be ready..."
+          sleep 10
+          tailscale status
+      
+      - name: Create logs directory
+        run: mkdir -p logs
+      
+      - name: Run log collector
+        run: python3 scripts/collect_tailscale_logs.py logs/
+      
+      - name: Commit and push logs
+        run: |
+          git config --global user.name 'Tailscale Log Bot'
+          git config --global user.email 'bot@github-actions.local'
+          git add logs/
+          git commit -m "Add Tailscale logs - $(date -u +'%Y-%m-%d %H:%M:%S UTC')" || echo "No changes to commit"
+          git push
+      
+      - name: Summary
+        if: success()
+        run: |
+          echo "✅ Logs collected successfully"
+          ls -lh logs/ | tail -5
+```
+
+**Save and exit**
+
+---
+
+## Step 11: Add Secrets to GitHub
+
+**In your browser:**
+
+1. **Go to your repository:**
+```
+   https://github.com/jarrydnharris/wazuh-tailscale-integration
