@@ -52,17 +52,3 @@ jobs:
         if: success()
         run: |
           echo "✅ Logs collected successfully"
-          ls -lh logs/ | tail -5
-```
-
-**Save and exit**
-
----
-
-## Step 11: Add Secrets to GitHub
-
-**In your browser:**
-
-1. **Go to your repository:**
-```
-   https://github.com/jarrydnharris/wazuh-tailscale-integration
