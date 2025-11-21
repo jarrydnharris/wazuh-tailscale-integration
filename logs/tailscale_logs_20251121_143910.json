@@ -1,0 +1,895 @@
+{
+  "timestamp": "2025-11-21T14:39:10.642997Z",
+  "source": "tailscale",
+  "collector_version": "1.0",
+  "status": {
+    "Version": "1.90.8-tedc9d2245-ged5c52ee2",
+    "TUN": true,
+    "BackendState": "Running",
+    "HaveNodeKey": true,
+    "AuthURL": "",
+    "TailscaleIPs": [
+      "100.119.118.1",
+      "fd7a:115c:a1e0::7936:7601"
+    ],
+    "Self": {
+      "ID": "ne2PB75Sdo11CNTRL",
+      "PublicKey": "nodekey:c471e1355fd67f56e82961e6eaea50de96e0ee74f9e7d615fa76560f79777600",
+      "HostName": "CIT-LINUX-865",
+      "DNSName": "cit-linux-865.tail71b6bd.ts.net.",
+      "OS": "linux",
+      "UserID": 1648848279774156,
+      "TailscaleIPs": [
+        "100.119.118.1",
+        "fd7a:115c:a1e0::7936:7601"
+      ],
+      "AllowedIPs": [
+        "100.119.118.1/32",
+        "fd7a:115c:a1e0::7936:7601/128"
+      ],
+      "Addrs": [
+        "24.176.127.18:16869",
+        "172.16.192.145:41641"
+      ],
+      "CurAddr": "",
+      "Relay": "mia",
+      "PeerRelay": "",
+      "RxBytes": 0,
+      "TxBytes": 0,
+      "Created": "2025-11-21T14:31:51.274586092Z",
+      "LastWrite": "0001-01-01T00:00:00Z",
+      "LastSeen": "0001-01-01T00:00:00Z",
+      "LastHandshake": "0001-01-01T00:00:00Z",
+      "Online": true,
+      "ExitNode": false,
+      "ExitNodeOption": false,
+      "Active": false,
+      "PeerAPIURL": [
+        "http://100.119.118.1:51489",
+        "http://[fd7a:115c:a1e0::7936:7601]:44758"
+      ],
+      "TaildropTarget": 0,
+      "NoFileSharingReason": "",
+      "Capabilities": [
+        "HTTPS://TAILSCALE.COM/s/DEPRECATED-NODE-CAPS#see-https://github.com/tailscale/tailscale/issues/11508",
+        "https://tailscale.com/cap/file-sharing",
+        "https://tailscale.com/cap/is-admin",
+        "https://tailscale.com/cap/is-owner",
+        "https://tailscale.com/cap/ssh",
+        "https://tailscale.com/cap/tailnet-lock",
+        "probe-udp-lifetime",
+        "ssh-behavior-v1",
+        "ssh-env-vars",
+        "store-appc-routes",
+        "tailnet-display-name"
+      ],
+      "CapMap": {
+        "https://tailscale.com/cap/file-sharing": null,
+        "https://tailscale.com/cap/is-admin": null,
+        "https://tailscale.com/cap/is-owner": null,
+        "https://tailscale.com/cap/ssh": null,
+        "https://tailscale.com/cap/tailnet-lock": null,
+        "probe-udp-lifetime": null,
+        "ssh-behavior-v1": null,
+        "ssh-env-vars": null,
+        "store-appc-routes": null,
+        "tailnet-display-name": [
+          "citclarksvillestudenthelpdesk@gmail.com"
+        ]
+      },
+      "InNetworkMap": true,
+      "InMagicSock": false,
+      "InEngine": false,
+      "KeyExpiry": "2026-05-20T14:31:51Z"
+    },
+    "Health": [
+      "Some peers are advertising routes but --accept-routes is false"
+    ],
+    "MagicDNSSuffix": "tail71b6bd.ts.net",
+    "CurrentTailnet": {
+      "Name": "citclarksvillestudenthelpdesk@gmail.com",
+      "MagicDNSSuffix": "tail71b6bd.ts.net",
+      "MagicDNSEnabled": true
+    },
+    "CertDomains": null,
+    "Peer": {
+      "nodekey:42be08511f15d0b9657692344d0ad606d2820f8d2b8146068b78ff942691076d": {
+        "ID": "nmpJEo8JLB21CNTRL",
+        "PublicKey": "nodekey:42be08511f15d0b9657692344d0ad606d2820f8d2b8146068b78ff942691076d",
+        "HostName": "CIT-HELPDESK2",
+        "DNSName": "cit-helpdesk2.tail71b6bd.ts.net.",
+        "OS": "windows",
+        "UserID": 1648848279774156,
+        "TailscaleIPs": [
+          "100.81.7.110",
+          "fd7a:115c:a1e0::2601:776"
+        ],
+        "AllowedIPs": [
+          "100.81.7.110/32",
+          "fd7a:115c:a1e0::2601:776/128"
+        ],
+        "Addrs": null,
+        "CurAddr": "",
+        "Relay": "iad",
+        "PeerRelay": "",
+        "RxBytes": 0,
+        "TxBytes": 0,
+        "Created": "2025-09-24T18:41:43.999743133Z",
+        "LastWrite": "0001-01-01T00:00:00Z",
+        "LastSeen": "0001-01-01T00:00:00Z",
+        "LastHandshake": "0001-01-01T00:00:00Z",
+        "Online": true,
+        "ExitNode": false,
+        "ExitNodeOption": false,
+        "Active": false,
+        "PeerAPIURL": [
+          "http://100.81.7.110:50957",
+          "http://[fd7a:115c:a1e0::2601:776]:61931"
+        ],
+        "TaildropTarget": 1,
+        "NoFileSharingReason": "",
+        "InNetworkMap": true,
+        "InMagicSock": true,
+        "InEngine": false,
+        "KeyExpiry": "2026-03-23T18:41:43Z"
+      },
+      "nodekey:d583df8b1bde53c4e985f66ef3a9b55882d154073c463fe606d1e338499be72f": {
+        "ID": "nzCw79LXT421CNTRL",
+        "PublicKey": "nodekey:d583df8b1bde53c4e985f66ef3a9b55882d154073c463fe606d1e338499be72f",
+        "HostName": "tailscale",
+        "DNSName": "pm-tailscale-vm.tail71b6bd.ts.net.",
+        "OS": "linux",
+        "UserID": 1648848279774156,
+        "TailscaleIPs": [
+          "100.91.231.48",
+          "fd7a:115c:a1e0::4901:e735"
+        ],
+        "AllowedIPs": [
+          "100.91.231.48/32",
+          "fd7a:115c:a1e0::4901:e735/128",
+          "172.16.192.0/24"
+        ],
+        "PrimaryRoutes": [
+          "172.16.192.0/24"
+        ],
+        "Addrs": null,
+        "CurAddr": "",
+        "Relay": "iad",
+        "PeerRelay": "",
+        "RxBytes": 0,
+        "TxBytes": 0,
+        "Created": "2025-09-24T13:43:06.995193511Z",
+        "LastWrite": "0001-01-01T00:00:00Z",
+        "LastSeen": "0001-01-01T00:00:00Z",
+        "LastHandshake": "0001-01-01T00:00:00Z",
+        "Online": true,
+        "ExitNode": false,
+        "ExitNodeOption": false,
+        "Active": false,
+        "PeerAPIURL": [
+          "http://100.91.231.48:52676",
+          "http://[fd7a:115c:a1e0::4901:e735]:37421"
+        ],
+        "TaildropTarget": 1,
+        "NoFileSharingReason": "",
+        "InNetworkMap": true,
+        "InMagicSock": true,
+        "InEngine": false,
+        "KeyExpiry": "2026-03-23T13:43:06Z"
+      }
+    },
+    "User": {
+      "1648848279774156": {
+        "ID": 1648848279774156,
+        "LoginName": "citclarksvillestudenthelpdesk@gmail.com",
+        "DisplayName": "CIT Clarksville",
+        "ProfilePicURL": "https://lh3.googleusercontent.com/a/ACg8ocK3kjMB05HaGMDy2TllxNsJha6KteBOoM6O54qNjjZ3OUpS7g=s96-c"
+      }
+    },
+    "ClientVersion": {
+      "RunningLatest": true
+    }
+  },
+  "events": [
+    {
+      "timestamp": "1763735348120954",
+      "message": "monitor: gateway and self IP changed: gw=172.16.192.1 self=172.16.192.145",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735348120954",
+      "message": "router: portUpdate(port=41641, network=udp6)",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735348120954",
+      "message": "router: portUpdate(port=41641, network=udp4)",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735348124954",
+      "message": "pm: migrating \"_daemon\" profile to new format",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735348124954",
+      "message": "envknob: PORT=\"41641\"",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735348124954",
+      "message": "logpolicy: using $STATE_DIRECTORY, \"/var/lib/tailscale\"",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735348124954",
+      "message": "got LocalBackend in 76ms",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735348124954",
+      "message": "Start",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735348124954",
+      "message": "ipnext: active extensions: posture, clientupdate, relayserver, taildrop, portlist",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735348126775",
+      "message": "Backend: logs: be:2d92fa6b6a4040b6fe86c948c5ac03210ca095bbfb957d3eca1d53068c78b183 fe:",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735348126953",
+      "message": "Switching ipn state NoState -> NeedsLogin (WantRunning=false, nm=false)",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735348126953",
+      "message": "blockEngineUpdates(true)",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735348126953",
+      "message": "wgengine: Reconfig: configuring userspace WireGuard config (with 0/0 peers)",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735348127028",
+      "message": "wgengine: Reconfig: configuring router",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735348127028",
+      "message": "wgengine: Reconfig: user dialer",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735348127028",
+      "message": "wgengine: Reconfig: configuring DNS",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735348127028",
+      "message": "dns: Set: {DefaultResolvers:[] Routes:{} SearchDomains:[] Hosts:0}",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735348127174",
+      "message": "dns: Resolvercfg: {Routes:{} Hosts:0 LocalDomains:[]}",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735348127174",
+      "message": "dns: OScfg: {}",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735348127174",
+      "message": "health(warnable=wantrunning-false): error: Tailscale is stopped.",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735483874267",
+      "message": "Start",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735483875811",
+      "message": "generating new machine key",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735483877629",
+      "message": "machine key written to store",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735483877706",
+      "message": "Backend: logs: be:2d92fa6b6a4040b6fe86c948c5ac03210ca095bbfb957d3eca1d53068c78b183 fe:",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735483877778",
+      "message": "health(warnable=warming-up): error: Tailscale is starting. Please wait.",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735483877810",
+      "message": "Switching ipn state NoState -> NeedsLogin (WantRunning=true, nm=false)",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735483877905",
+      "message": "health(warnable=wantrunning-false): ok",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735483877905",
+      "message": "blockEngineUpdates(true)",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735483877968",
+      "message": "Reconfig(down): no changes made to Engine config",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735483877997",
+      "message": "control: client.Shutdown ...",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735483877997",
+      "message": "control: mapRoutine: exiting",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735483877997",
+      "message": "control: authRoutine: exiting",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735483878059",
+      "message": "control: updateRoutine: exiting",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735483878059",
+      "message": "control: Client.Shutdown done.",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735483878356",
+      "message": "StartLoginInteractiveAs(\"root\"): url=false",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735483878424",
+      "message": "control: client.Login(2)",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735483878508",
+      "message": "control: LoginInteractive -> regen=true",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735483878508",
+      "message": "control: doLogin(regen=true, hasUrl=false)",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735487726074",
+      "message": "control: control server key from https://controlplane.tailscale.com: ts2021=[fSeS+], legacy=[nlFWp]",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735487726608",
+      "message": "control: Generating a new nodekey.",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735487729257",
+      "message": "control: RegisterReq: onode= node=[xHHhN] fup=false nks=false",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735488223222",
+      "message": "control: RegisterReq: got response; nodeKeyExpired=false, machineAuthorized=false; authURL=true",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735488223422",
+      "message": "control: AuthURL is https://login.tailscale.com/a/1c71d08f01bb9f",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735488223422",
+      "message": "control: doLogin(regen=false, hasUrl=true)",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735488223422",
+      "message": "Received auth URL: https://login.tailsc...",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735488223422",
+      "message": "popBrowserAuthNow(\"root\"): url=true, key-expired=false, seamless-key-renewal=false",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735488223703",
+      "message": "blockEngineUpdates(true)",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735488223703",
+      "message": "stopEngineAndWait...",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735488223703",
+      "message": "control: RegisterReq: onode= node=[xHHhN] fup=true nks=false",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735488223703",
+      "message": "requestEngineStatusAndWaitForStopped",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735488223703",
+      "message": "requestEngineStatusAndWaitForStopped: waiting...",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735488223703",
+      "message": "requestEngineStatusAndWaitForStopped: engine is stopped.",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735488223703",
+      "message": "stopEngineAndWait: done.",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735488878385",
+      "message": "health(warnable=warming-up): ok",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511331806",
+      "message": "Received error: register request: http 410: auth path not found",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511331806",
+      "message": "REQ-20251121143128a268fa342493d947",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511332845",
+      "message": "health(warnable=login-state): error: You are logged out. The last login error was: register request: http 410: auth path not found",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511332845",
+      "message": "REQ-20251121143128a268fa342493d947",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511337382",
+      "message": "control: doLogin(regen=false, hasUrl=true)",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511337382",
+      "message": "control: RegisterReq: onode= node=[xHHhN] fup=true nks=false",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511462877",
+      "message": "control: RegisterReq: got response; nodeKeyExpired=false, machineAuthorized=true; authURL=false",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511463061",
+      "message": "blockEngineUpdates(false)",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511463061",
+      "message": "health(warnable=login-state): ok",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511613670",
+      "message": "health(warnable=not-in-map-poll): ok",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511613670",
+      "message": "control: netmap: got new dial plan from control",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511613670",
+      "message": "using tailnet default auto-update setting: true",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511613670",
+      "message": "EditPrefs: MaskedPrefs{AutoUpdate={Apply=true}}",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511613670",
+      "message": "offline auto-update: starting update checks",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511622113",
+      "message": "active login: citclarksvillestudenthelpdesk@gmail.com",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511622113",
+      "message": "magicsock: SetPrivateKey called (init)",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511622113",
+      "message": "wgengine: Reconfig: configuring userspace WireGuard config (with 0/2 peers)",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511622113",
+      "message": "wgengine: Reconfig: configuring router",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511627216",
+      "message": "offline auto-update: stopping update checks",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511627216",
+      "message": "Switching ipn state NeedsLogin -> Starting (WantRunning=true, nm=true)",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511730419",
+      "message": "wgengine: Reconfig: user dialer",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511730419",
+      "message": "tsdial: bart table size: 5",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511730419",
+      "message": "wgengine: Reconfig: configuring DNS",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511730419",
+      "message": "dns: Set: {DefaultResolvers:[172.16.192.20] Routes:{tail71b6bd.ts.net.:[] ts.net.:[199.247.155.53 2620:111:8007::53]}+65arpa SearchDomains:[tail71b6bd.ts.net. citclab.edu.] Hosts:3}",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511730419",
+      "message": "dns: Resolvercfg: {Routes:{.:[172.16.192.20] ts.net.:[199.247.155.53 2620:111:8007::53]} Hosts:3 LocalDomains:[tail71b6bd.ts.net.]+65arpa}",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511730419",
+      "message": "dns: OScfg: {Nameservers:[100.100.100.100] SearchDomains:[tail71b6bd.ts.net. citclab.edu.] }",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511752695",
+      "message": "peerapi: serving on http://100.119.118.1:51489",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511752695",
+      "message": "peerapi: serving on http://[fd7a:115c:a1e0::7936:7601]:44758",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511875310",
+      "message": "magicsock: home DERP changing from derp-0 [0ms] to derp-16 [37ms]",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511875310",
+      "message": "magicsock: home is now derp-16 (mia)",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511875310",
+      "message": "magicsock: adding connection to derp-16 for home-keep-alive",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511875310",
+      "message": "magicsock: 1 active derp conns: derp-16=cr0s,wr0s",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511875310",
+      "message": "Switching ipn state Starting -> Running (WantRunning=true, nm=true)",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511875310",
+      "message": "control: NetInfo: NetInfo{varies=false hairpin= ipv6=false ipv6os=true udp=true icmpv4=false derp=#16 portmap= link=\"\" firewallmode=\"ipt-default\"}",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511875310",
+      "message": "derphttp.Client.Connect: connecting to derp-16 (mia)",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511877105",
+      "message": "magicsock: endpoints changed: 24.176.127.18:16869 (stun), 172.16.192.145:41641 (local)",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735511877105",
+      "message": "health(warnable=no-derp-home): ok",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735512039104",
+      "message": "magicsock: derp-16 connected; connGen=1",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735512039219",
+      "message": "health(warnable=no-derp-connection): ok",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735531451617",
+      "message": "dns: resolver: forward: sendTCP: response code indicating server failure: 2",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735531452182",
+      "message": "dns: resolver: forward: recv: response code indicating server failure: 2",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735541451368",
+      "message": "dns: resolver: forward: sendTCP: response code indicating server failure: 2",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735541451739",
+      "message": "dns: resolver: forward: recv: response code indicating server failure: 2",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735832226124",
+      "message": "Received error: PollNetMap: unexpected EOF",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735832527578",
+      "message": "control: controlhttp: forcing port 443 dial due to recent noise dial",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    },
+    {
+      "timestamp": "1763735838120183",
+      "message": "control: netmap: got new dial plan from control",
+      "priority": "6",
+      "unit": "tailscaled.service",
+      "hostname": "CIT-LINUX-865"
+    }
+  ]
+}
