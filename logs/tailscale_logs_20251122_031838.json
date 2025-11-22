@@ -1,0 +1,195 @@
+{
+  "timestamp": "2025-11-22T03:18:38.729570Z",
+  "source": "tailscale",
+  "collector_version": "1.0",
+  "status": {
+    "Version": "1.42.0-t3a83d61ec-g6702f39bf",
+    "TUN": true,
+    "BackendState": "Running",
+    "AuthURL": "",
+    "TailscaleIPs": [
+      "100.88.110.91",
+      "fd7a:115c:a1e0::a236:6e5b"
+    ],
+    "Self": {
+      "ID": "nBN3fLkF8D11CNTRL",
+      "PublicKey": "nodekey:eaeff11c0535daf53b45d4ef5c5ccb5c65f22d849b9cc1947a1d92e0a2586e5a",
+      "HostName": "github-runnervmg1sw1",
+      "DNSName": "github-runnervmg1sw1.tail71b6bd.ts.net.",
+      "OS": "linux",
+      "UserID": 1552774277261332,
+      "TailscaleIPs": [
+        "100.88.110.91",
+        "fd7a:115c:a1e0::a236:6e5b"
+      ],
+      "Tags": [
+        "tag:ci"
+      ],
+      "Addrs": [
+        "172.208.153.6:13345",
+        "10.1.0.134:52783",
+        "172.17.0.1:52783"
+      ],
+      "CurAddr": "",
+      "Relay": "den",
+      "RxBytes": 0,
+      "TxBytes": 0,
+      "Created": "2025-11-22T03:18:28.302900297Z",
+      "LastWrite": "0001-01-01T00:00:00Z",
+      "LastSeen": "0001-01-01T00:00:00Z",
+      "LastHandshake": "0001-01-01T00:00:00Z",
+      "Online": true,
+      "KeepAlive": false,
+      "ExitNode": false,
+      "ExitNodeOption": false,
+      "Active": false,
+      "PeerAPIURL": [
+        "http://100.88.110.91:59471",
+        "http://[fd7a:115c:a1e0::a236:6e5b]:36453"
+      ],
+      "Capabilities": [
+        "https://tailscale.com/cap/file-sharing",
+        "https://tailscale.com/cap/ssh",
+        "https://tailscale.com/cap/tailnet-lock-alpha",
+        "probe-udp-lifetime",
+        "ssh-env-vars",
+        "store-appc-routes"
+      ],
+      "InNetworkMap": true,
+      "InMagicSock": false,
+      "InEngine": false
+    },
+    "Health": null,
+    "MagicDNSSuffix": "tail71b6bd.ts.net",
+    "CurrentTailnet": {
+      "Name": "citclarksvillestudenthelpdesk@gmail.com",
+      "MagicDNSSuffix": "tail71b6bd.ts.net",
+      "MagicDNSEnabled": true
+    },
+    "CertDomains": null,
+    "Peer": {
+      "nodekey:42be08511f15d0b9657692344d0ad606d2820f8d2b8146068b78ff942691076d": {
+        "ID": "nmpJEo8JLB21CNTRL",
+        "PublicKey": "nodekey:42be08511f15d0b9657692344d0ad606d2820f8d2b8146068b78ff942691076d",
+        "HostName": "CIT-HELPDESK2",
+        "DNSName": "cit-helpdesk2.tail71b6bd.ts.net.",
+        "OS": "windows",
+        "UserID": 1648848279774156,
+        "TailscaleIPs": [
+          "100.81.7.110",
+          "fd7a:115c:a1e0::2601:776"
+        ],
+        "Addrs": null,
+        "CurAddr": "",
+        "Relay": "iad",
+        "RxBytes": 0,
+        "TxBytes": 0,
+        "Created": "2025-09-24T18:41:43.999743133Z",
+        "LastWrite": "0001-01-01T00:00:00Z",
+        "LastSeen": "0001-01-01T00:00:00Z",
+        "LastHandshake": "0001-01-01T00:00:00Z",
+        "Online": true,
+        "KeepAlive": false,
+        "ExitNode": false,
+        "ExitNodeOption": false,
+        "Active": false,
+        "PeerAPIURL": [
+          "http://100.81.7.110:50957",
+          "http://[fd7a:115c:a1e0::2601:776]:61931"
+        ],
+        "InNetworkMap": true,
+        "InMagicSock": true,
+        "InEngine": false,
+        "KeyExpiry": "2026-03-23T18:41:43Z"
+      },
+      "nodekey:c471e1355fd67f56e82961e6eaea50de96e0ee74f9e7d615fa76560f79777600": {
+        "ID": "ne2PB75Sdo11CNTRL",
+        "PublicKey": "nodekey:c471e1355fd67f56e82961e6eaea50de96e0ee74f9e7d615fa76560f79777600",
+        "HostName": "CIT-LINUX-865",
+        "DNSName": "cit-linux-865.tail71b6bd.ts.net.",
+        "OS": "linux",
+        "UserID": 1648848279774156,
+        "TailscaleIPs": [
+          "100.119.118.1",
+          "fd7a:115c:a1e0::7936:7601"
+        ],
+        "Addrs": null,
+        "CurAddr": "",
+        "Relay": "mia",
+        "RxBytes": 0,
+        "TxBytes": 0,
+        "Created": "2025-11-21T14:31:51.274586092Z",
+        "LastWrite": "0001-01-01T00:00:00Z",
+        "LastSeen": "0001-01-01T00:00:00Z",
+        "LastHandshake": "0001-01-01T00:00:00Z",
+        "Online": true,
+        "KeepAlive": false,
+        "ExitNode": false,
+        "ExitNodeOption": false,
+        "Active": false,
+        "PeerAPIURL": [
+          "http://100.119.118.1:51489",
+          "http://[fd7a:115c:a1e0::7936:7601]:44758"
+        ],
+        "InNetworkMap": true,
+        "InMagicSock": true,
+        "InEngine": false,
+        "KeyExpiry": "2026-05-20T14:31:51Z"
+      },
+      "nodekey:d583df8b1bde53c4e985f66ef3a9b55882d154073c463fe606d1e338499be72f": {
+        "ID": "nzCw79LXT421CNTRL",
+        "PublicKey": "nodekey:d583df8b1bde53c4e985f66ef3a9b55882d154073c463fe606d1e338499be72f",
+        "HostName": "tailscale",
+        "DNSName": "pm-tailscale-vm.tail71b6bd.ts.net.",
+        "OS": "linux",
+        "UserID": 1648848279774156,
+        "TailscaleIPs": [
+          "100.91.231.48",
+          "fd7a:115c:a1e0::4901:e735"
+        ],
+        "PrimaryRoutes": [
+          "172.16.192.0/24"
+        ],
+        "Addrs": null,
+        "CurAddr": "",
+        "Relay": "iad",
+        "RxBytes": 0,
+        "TxBytes": 0,
+        "Created": "2025-09-24T13:43:06.995193511Z",
+        "LastWrite": "0001-01-01T00:00:00Z",
+        "LastSeen": "0001-01-01T00:00:00Z",
+        "LastHandshake": "1970-01-01T00:00:00Z",
+        "Online": true,
+        "KeepAlive": false,
+        "ExitNode": false,
+        "ExitNodeOption": false,
+        "Active": false,
+        "PeerAPIURL": [
+          "http://100.91.231.48:52676",
+          "http://[fd7a:115c:a1e0::4901:e735]:37421"
+        ],
+        "InNetworkMap": true,
+        "InMagicSock": true,
+        "InEngine": true,
+        "KeyExpiry": "2026-03-23T13:43:06Z"
+      }
+    },
+    "User": {
+      "1552774277261332": {
+        "ID": 1552774277261332,
+        "LoginName": "github-runnervmg1sw1.tail71b6bd.ts.net",
+        "DisplayName": "github-runnervmg1sw1",
+        "ProfilePicURL": "",
+        "Roles": []
+      },
+      "1648848279774156": {
+        "ID": 1648848279774156,
+        "LoginName": "citclarksvillestudenthelpdesk@gmail.com",
+        "DisplayName": "CIT Clarksville",
+        "ProfilePicURL": "https://lh3.googleusercontent.com/a/ACg8ocK3kjMB05HaGMDy2TllxNsJha6KteBOoM6O54qNjjZ3OUpS7g=s96-c",
+        "Roles": []
+      }
+    }
+  },
+  "events": []
+}
