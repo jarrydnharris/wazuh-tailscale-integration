@@ -13,7 +13,7 @@ import sys
 from pathlib import Path
 
 class TailscaleLogCollector:
-    def __init__(self, output_dir="/opt/tailscale-logs/repo/logs"):
+    def __init__(self, output_dir="/var/log/tailscale-custom"):
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
         # We use a fixed filename so Wazuh can watch it consistently
@@ -63,7 +63,7 @@ class TailscaleLogCollector:
 
     def format_for_wazuh(self, status_data, system_logs):
         """Format logs in a Wazuh-friendly JSON structure"""
-        timestamp = datetime.datetime.utcnow().isoformat() + 'Z'
+        timestamp = datetime.datetime.now(datetime.timezone.utc).isoformat().replace("+00:00", "Z")
         
         wazuh_logs = {
             "timestamp": timestamp,
@@ -128,7 +128,7 @@ class TailscaleLogCollector:
 
 def main():
     # Allow overriding output dir via command line, else use default
-    output_dir = sys.argv[1] if len(sys.argv) > 1 else "/opt/tailscale-logs/repo/logs"
+    output_dir = sys.argv[1] if len(sys.argv) > 1 else "/var/log/tailscale-custom"
     
     collector = TailscaleLogCollector(output_dir=output_dir)
     collector.collect()
