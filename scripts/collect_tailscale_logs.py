@@ -13,7 +13,7 @@ import sys
 from pathlib import Path
 
 class TailscaleLogCollector:
-    def __init__(self, output_dir="/opt/tailscale-logs/repo/logs"):
+    def __init__(self, output_dir="/var/log/tailscale-custom"):
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
         # We use a fixed filename so Wazuh can watch it consistently
